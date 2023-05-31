@@ -1,0 +1,1 @@
+<p>Card added successfully.</p>
