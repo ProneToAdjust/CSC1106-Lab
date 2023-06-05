@@ -29,9 +29,8 @@
 </head>
 
 <div class = "row">
-    <a class = 'menu' href="/email/inbox">Inbox</a>
-    <a class = 'menu' href="/email/sent">Sent</a>
-    <a class = 'menu' href="/email/send_email">Compose email</a>
+    <a class = 'menu' href="<?php echo site_url('email/sent') ?>">Sent</a>
+    <a class = 'menu' href="<?php echo site_url('email/send_email') ?>">Compose email</a>
 </div>
 <div class = "row">
     <div class = "column">

@@ -17,19 +17,11 @@ class Email extends BaseController
             ]);
         }
         else {
-            if ($mode == 'inbox') {
-                $data = [
-                    'mode' => 'Inbox',
-                    'emails' => $receivedModel->getReceived(),
-                    'email_msg' => ''
-                ];
-            } else {
-                $data = [
-                    'mode' => 'Sent',
-                    'emails' => $sentModel->getSent(),
-                    'email_msg' => ''
-                ];
-            }
+            $data = [
+                'mode' => 'Sent',
+                'emails' => $sentModel->getSent(),
+                'email_msg' => ''
+            ];
         }
 
         return view('email/index', $data);
