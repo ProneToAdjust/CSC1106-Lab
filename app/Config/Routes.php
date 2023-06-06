@@ -42,6 +42,9 @@ use App\Controllers\Dashboard;
 use App\Controllers\DailyPick;
 use App\Controllers\Credits;
 use App\Controllers\Home;
+use App\Controllers\Trade;
+
+$routes->get('trade', [Trade::class, 'index']);
 
 $routes->get('home', [Home::class, 'index']);
 
