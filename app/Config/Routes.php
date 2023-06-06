@@ -38,6 +38,9 @@ use App\Controllers\LuckyNumber;
 use App\Controllers\TableAltRowBg;
 use App\Controllers\CreditCard;
 use App\Controllers\TotoBetSlip;
+use App\Controllers\Dashboard;
+
+$routes->get('dashboard', [Dashboard::class, 'index']);
 
 $routes->get('toto-bet-slip', [TotoBetSlip::class, 'index']);
 
