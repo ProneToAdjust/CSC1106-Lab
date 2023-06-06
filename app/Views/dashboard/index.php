@@ -12,12 +12,6 @@ tr {
 
 <?php
 
-function getColorByIndex($index) {
-  $colors = array('red', 'yellow', 'green');
-  $colorIndex = $index % count($colors);
-  return $colors[$colorIndex];
-}
-
 function getChangeColor($change) {
     if (strpos($change, '-') !== false) {
         return 'red';

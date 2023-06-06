@@ -39,6 +39,9 @@ use App\Controllers\TableAltRowBg;
 use App\Controllers\CreditCard;
 use App\Controllers\TotoBetSlip;
 use App\Controllers\Dashboard;
+use App\Controllers\DailyPick;
+
+$routes->get('daily-pick', [DailyPick::class, 'index']);
 
 $routes->get('dashboard', [Dashboard::class, 'index']);
 
