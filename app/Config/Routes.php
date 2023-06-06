@@ -40,6 +40,9 @@ use App\Controllers\CreditCard;
 use App\Controllers\TotoBetSlip;
 use App\Controllers\Dashboard;
 use App\Controllers\DailyPick;
+use App\Controllers\Credits;
+
+$routes->get('credits', [Credits::class, 'index']);
 
 $routes->get('daily-pick', [DailyPick::class, 'index']);
 
