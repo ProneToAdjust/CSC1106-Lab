@@ -41,6 +41,9 @@ use App\Controllers\TotoBetSlip;
 use App\Controllers\Dashboard;
 use App\Controllers\DailyPick;
 use App\Controllers\Credits;
+use App\Controllers\Home;
+
+$routes->get('home', [Home::class, 'index']);
 
 $routes->get('credits', [Credits::class, 'index']);
 
